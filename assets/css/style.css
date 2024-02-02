@@ -4,30 +4,81 @@
   border: 0;
 }
 
+/* Tipografía para toda la página */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Ancho del logo institucional*/
 nav img {
   width: 30pt;
 }
 
+nav li {
+  font-size: 14pt;
+}
+
+/* Barra de navegación transparente y sobrepuesta al carrusel */
+#barra_nav {
+  background-color: transparent;
+  /*position: fixed;*/
+  width: 100%;
+  z-index: 1000; /* valor alto para lograr la superposición */
+}
+
+/* Carrusel debajo del navbar sobrepuesto */
+header {
+  /*position: relative;*/
+  z-index: 1;
+}
+
+/* ancho de las imágenes del carrusel */
 header img {
   width: 100%;
 }
 
+/* Sección de tres columnas fondo y color letra */
 article {
   color:white;
   background-color: black;
 }
 
-section#destacados {
+#fila_parrafos {
+  padding-top: 15pt;
+}
+
+#parrafos i {
+  font-size: 25pt;
+  color: white;
+}
+
+#parrafos h2 {
+  padding-top: 45pt;
+  padding-bottom: 15pt;
+  text-align: center;
+}
+
+#parrafos p {
+  text-align: justify;
+}
+
+#destacados {
   color: white;
   background-color: black;
 }
 
-section img {
-  width: 400pt;
+#destacados h2 {
+  padding-top: 45pt;
+  padding-bottom: 15pt;
+  text-align: center;
+}
+
+#destacados img {
+  height: 150pt;
+}
+
+#destacados h3, p {
+  color: white;
 }
 
 section#contacto{
