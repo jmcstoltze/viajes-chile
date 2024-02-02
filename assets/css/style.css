@@ -1,3 +1,4 @@
+/* Seteo inicial */
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +7,10 @@
 
 /* Tipografía para toda la página */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Ancho del logo institucional*/
+/* Barra de navegación transparente y sobrepuesta al carrusel */
 nav img {
   width: 30pt;
 }
@@ -18,28 +19,24 @@ nav li {
   font-size: 14pt;
 }
 
-/* Barra de navegación transparente y sobrepuesta al carrusel */
 #barra_nav {
   background-color: transparent;
-  /*position: fixed;*/
   width: 100%;
-  z-index: 1000; /* valor alto para lograr la superposición */
+  z-index: 1000;
 }
 
 /* Carrusel debajo del navbar sobrepuesto */
 header {
-  /*position: relative;*/
   z-index: 1;
 }
 
-/* ancho de las imágenes del carrusel */
 header img {
   width: 100%;
 }
 
-/* Sección de tres columnas fondo y color letra */
+/* Sección de tres columnas con texto */
 article {
-  color:white;
+  color: white;
   background-color: black;
 }
 
@@ -62,6 +59,7 @@ article {
   text-align: justify;
 }
 
+/* Sección de destacados con cards de lugares */
 #destacados {
   color: white;
   background-color: black;
@@ -73,20 +71,58 @@ article {
   text-align: center;
 }
 
+#destacados p {
+  text-align: justify;
+}
+
 #destacados img {
   height: 150pt;
 }
 
-#destacados h3, p {
+#destacados h3,
+p {
   color: white;
 }
 
-section#contacto{
+/* Section del formulario de contacto */
+section#contacto {
   color: white;
   background-color: black;
 }
 
+#formulario_contacto {
+  padding-bottom: 80px;
+}
+
+#formulario_contacto textarea {
+  height: 250px;
+}
+
+#formulario_contacto button {
+  color: white;
+}
+
+#contacto h2 {
+  padding-top: 45pt;
+  padding-bottom: 15pt;
+  text-align: center;
+}
+
+/* Footer con enlaces a redes sociales */
 footer {
   color: white;
-  background-color: aqua;
+}
+
+footer i {
+  color: white;
+  font-size: 30pt;
+}
+
+#pie_pagina.container {
+  padding: 60px 130px;
+}
+
+#enlaces a {
+  margin: 8pt;
+  text-decoration: none;
 }

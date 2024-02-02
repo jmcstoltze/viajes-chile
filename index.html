@@ -198,9 +198,9 @@
 
     <!-- Sección de 4 tarjetas -->
     <section id="destacados">
-      <h2>DESTACADOS</h2>
-      <hr>
       <div class="container">
+        <h2>DESTACADOS</h2>
+        <hr>
         <div class="row mt-5">
           <div class="col-3">
             <div class="card bg-info" style="width: 19rem;">
@@ -245,26 +245,47 @@
 
     <!-- Sección del formulario -->
     <section id="contacto">
-      <h2>CONTACTO</h2>
-      <form>
-        <label>Nombre</label><br />
-        <input type="text" cols="20" /><br />
-        <label>Asunto</label><br />
-        <input type="text" /><br />
-        <label>Mensaje</label><br />
-        <input type="textarea" /><br />
-        <button>Enviar</button>
-      </form>
+      <div class="container">
+        <h2>CONTACTO</h2>
+        <hr>
+        <form id="formulario_contacto">
+          <div class="mb-3">
+            <label for="nombre_form" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre_form">
+          </div>
+          <div class="mb-3">
+            <label for="asunto_form" class="form-label">Asunto</label>
+            <input type="text" class="form-control" id="asunto_form">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje_form" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje_form"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
+      </div>
     </section>
     <!-- Fin del formulario -->
 
     <!-- Sección del footer con links a redes sociales -->
-    <footer>
-      <h2>VIAJES CHILE</h2>
-      <a href="https://www.github.com/" target="_blank">Github</a>
-      <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-      <a href="https://www.twitter.com/" target="_blank">Twitter</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    <footer class="bg-info">
+      <div id="pie_pagina" class="container d-flex justify-content-between align-items-center">
+        <h2>VIAJES CHILE</h2>
+        <div id="enlaces">
+          <a href="https://www.github.com/" target="_blank">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </div>
+      </div>
     </footer>
     <!-- Final del footer -->
 
