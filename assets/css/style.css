@@ -59,6 +59,7 @@ article {
   text-align: justify;
 }
 
+/* Color de los tooltips */
 .custom-tooltip .tooltip-inner {
   background-color: white;
   color: black;
@@ -82,12 +83,16 @@ article {
 }
 
 #destacados img {
-  height: 150pt;
+  height: 200pt;
 }
 
 #destacados h3,
 p {
   color: white;
+}
+
+.card {
+  width: 100%;
 }
 
 /* Section del formulario de contacto */
@@ -121,14 +126,61 @@ footer {
 
 footer i {
   color: white;
-  font-size: 30pt;
+  font-size: 38pt;
 }
 
 #pie_pagina.container {
   padding: 60px 130px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #enlaces a {
   margin: 8pt;
   text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+  #carrusel_fotos img {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Desaparece sección en pantallas pequeñas */
+  #quienesSomos {
+    display: none;
+  }
+
+  /* Padding para el contenedor de las cartas */
+  #contenedor_cards {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* Adaptaciones en el formulario */
+  #formulario_contacto {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  /* Adaptaciones en el footer */
+  footer i {
+    color: white;
+    font-size: 28pt;
+  }
+
+  #pie_pagina.container {
+    padding: 60px 40px 80px;
+    display: block;
+  }
+
+  #pie_pagina.container h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #enlaces {
+    text-align: center;
+  }
 }
