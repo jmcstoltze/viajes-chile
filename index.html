@@ -40,12 +40,12 @@
   <body>
     <!-- Barra de navegación que debe ser transparente y superpuesta con el carrusel -->
     <nav
-      id="barra_nav"
+      id="inicio"
       class="navbar navbar-expand-lg navbar-light position-absolute"
       data-bs-theme="dark"
     >
       <div class="container">
-        <a id="marca" class="navbar-brand" href="#">
+        <a id="marca" class="navbar-brand">
           <img src="assets/img/viajes.svg" alt="Logo viajes Chile" />
           Viajes Chile
         </a>
@@ -63,20 +63,20 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quiénes Somos</a>
+              <a class="nav-link" href="#quienesSomos">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
-      </di>
+      </div>
     </nav>
     <!-- Fin del navbar -->
 
@@ -110,7 +110,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carrusel_imagenes"
+          data-bs-target="#carrusel_fotos"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -119,7 +119,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carrusel_imagenes"
+          data-bs-target="#carrusel_fotos"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -131,13 +131,20 @@
     <!-- Fin header -->
 
     <!-- Sección de 3 columnas con texto y favicons generados con bootstrap  -->
-    <article>
-      <div id="parrafos" class="container">
+    <article id="quienesSomos">
+      <div class="container">
         <h2>¿QUIÉNES SOMOS?</h2>
         <hr />
         <div id="fila_parrafos" class="row">
           <div class="col">
-            <button type="button" class="btn btn-info w-100">
+            <button
+              type="button"
+              class="btn btn-info w-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Lorem ipsum dolor consectetur adipisicing elit."
+            >
               <i class="bi bi-airplane-fill"></i>
             </button>
             <p>
@@ -168,12 +175,26 @@
               illum suscipit velit. Enim, modi? Error ea voluptates ab assumenda
               officia?
             </p>
-            <button type="button" class="btn btn-info w-100">
+            <button
+              type="button"
+              class="btn btn-info w-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Recusandae facere consectetur adipisicing elit."
+            >
               <i class="bi bi-triangle-half"></i>
             </button>
           </div>
           <div class="col">
-            <button type="button" class="btn btn-info w-100">
+            <button
+              type="button"
+              class="btn btn-info w-100"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Tempore excepturi consectetur adipisicing elit."
+            >
               <i class="bi bi-sign-turn-right-fill"></i>
             </button>
             <p>
@@ -200,41 +221,73 @@
     <section id="destacados">
       <div class="container">
         <h2>DESTACADOS</h2>
-        <hr>
+        <hr />
         <div class="row mt-5">
           <div class="col-3">
-            <div class="card bg-info" style="width: 19rem;">
-              <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="Carta destacados 1">
-                <div class="card-body">
+            <div class="card bg-info" style="width: 19rem">
+              <img
+                src="assets/img/card1.jpg"
+                class="card-img-top img-fluid"
+                alt="Carta destacados 1"
+              />
+              <div class="card-body">
                 <h3 class="card-title">Lorem ipsum dolor</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur     adipisicing elit. Impedit deleniti quis, totam dignissimos libero provident similique. Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit deleniti quis, totam dignissimos libero provident
+                  similique. Lorem ipsum dolor sit amet consectetur.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="card bg-info" style="width: 19rem;">
-              <img src="assets/img/card2.jpg" class="card-img-top img-fluid" alt="Carta destacados 2">
-                <div class="card-body">
+            <div class="card bg-info" style="width: 19rem">
+              <img
+                src="assets/img/card2.jpg"
+                class="card-img-top img-fluid"
+                alt="Carta destacados 2"
+              />
+              <div class="card-body">
                 <h3 class="card-title">Sit amet consectetur</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur     adipisicing elit. Impedit deleniti quis, totam dignissimos libero provident similique. Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit deleniti quis, totam dignissimos libero provident
+                  similique. Lorem ipsum dolor sit amet consectetur.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="card bg-info" style="width: 19rem;">
-              <img src="assets/img/card3.jpg" class="card-img-top img-fluid" alt="Carta destacados 3">
-                <div class="card-body">
+            <div class="card bg-info" style="width: 19rem">
+              <img
+                src="assets/img/card3.jpg"
+                class="card-img-top img-fluid"
+                alt="Carta destacados 3"
+              />
+              <div class="card-body">
                 <h3 class="card-title">Impedit deleniti quis</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur     adipisicing elit. Impedit deleniti quis, totam dignissimos libero provident similique. Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit deleniti quis, totam dignissimos libero provident
+                  similique. Lorem ipsum dolor sit amet consectetur.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="card bg-info" style="width: 19rem;">
-              <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="Carta destacados 4">
-                <div class="card-body">
+            <div class="card bg-info" style="width: 19rem">
+              <img
+                src="assets/img/card4.jpg"
+                class="card-img-top img-fluid"
+                alt="Carta destacados 4"
+              />
+              <div class="card-body">
                 <h3 class="card-title">Lorem ipsum dolor</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur     adipisicing elit. Impedit deleniti quis, totam dignissimos libero provident similique. Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit deleniti quis, totam dignissimos libero provident
+                  similique. Lorem ipsum dolor sit amet consectetur.
+                </p>
               </div>
             </div>
           </div>
@@ -247,21 +300,21 @@
     <section id="contacto">
       <div class="container">
         <h2>CONTACTO</h2>
-        <hr>
+        <hr />
         <form id="formulario_contacto">
           <div class="mb-3">
             <label for="nombre_form" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre_form">
+            <input type="text" class="form-control" id="nombre_form" />
           </div>
           <div class="mb-3">
             <label for="asunto_form" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="asunto_form">
+            <input type="text" class="form-control" id="asunto_form" />
           </div>
           <div class="mb-3">
             <label for="mensaje_form" class="form-label">Mensaje</label>
             <textarea class="form-control" id="mensaje_form"></textarea>
           </div>
-          <button type="submit" class="btn btn-info">Enviar</button>
+          <button id="enviar" type="submit" class="btn btn-info">Enviar</button>
         </form>
       </div>
     </section>
@@ -269,7 +322,10 @@
 
     <!-- Sección del footer con links a redes sociales -->
     <footer class="bg-info">
-      <div id="pie_pagina" class="container d-flex justify-content-between align-items-center">
+      <div
+        id="pie_pagina"
+        class="container d-flex justify-content-between align-items-center"
+      >
         <h2>VIAJES CHILE</h2>
         <div id="enlaces">
           <a href="https://www.github.com/" target="_blank">
@@ -289,11 +345,22 @@
     </footer>
     <!-- Final del footer -->
 
-    <!-- Script de Bootstrap -->
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

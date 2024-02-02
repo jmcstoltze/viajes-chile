@@ -19,7 +19,7 @@ nav li {
   font-size: 14pt;
 }
 
-#barra_nav {
+#inicio {
   background-color: transparent;
   width: 100%;
   z-index: 1000;
@@ -44,19 +44,25 @@ article {
   padding-top: 15pt;
 }
 
-#parrafos i {
+#quienesSomos i {
   font-size: 25pt;
   color: white;
 }
 
-#parrafos h2 {
+#quienesSomos h2 {
   padding-top: 45pt;
   padding-bottom: 15pt;
   text-align: center;
 }
 
-#parrafos p {
+#quienesSomos p {
   text-align: justify;
+}
+
+.custom-tooltip .tooltip-inner {
+  background-color: white;
+  color: black;
+  font-size: 12pt;
 }
 
 /* Sección de destacados con cards de lugares */
