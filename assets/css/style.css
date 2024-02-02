@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav img {
+  width: 30pt;
+}
+
+header img {
+  width: 100%;
+}
+
+article {
+  color:white;
+  background-color: black;
+}
+
+section#destacados {
+  color: white;
+  background-color: black;
+}
+
+section img {
+  width: 400pt;
+}
+
+section#contacto{
+  color: white;
+  background-color: black;
+}
+
+footer {
+  color: white;
+  background-color: aqua;
+}
